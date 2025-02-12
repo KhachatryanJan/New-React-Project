@@ -16,9 +16,7 @@ function AvatarNameContent() {
                     setUserinfo(!userInfo)
                 }}></img>
             </div>
-            {userInfo && (<div className="activ-info">
-                <MyInfo />
-            </div>)}
+           
         </div>
     )
 }
