@@ -1,0 +1,206 @@
+.Header {
+  width: 1920px;
+  height: 109px;
+  border: 1px solid none;
+  box-shadow: 1px 1px 10px 1px var(--shadowWith);
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+/*------------------------------------------------------------------*/
+.logo {
+  width: 171px;
+  height: 45px;
+  margin-left: 380px;
+  margin-top: 31px;
+  margin-bottom: 33px;
+}
+
+.navContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 250px;
+
+}
+
+.nav-p {
+  color: var(--lightwWith);
+  font-size: 12px;
+  margin-top: 52px;
+  margin-bottom: 42;
+  cursor: pointer;
+
+}
+
+.nav-p:hover {
+  color: var(--black);
+}
+
+/*------------------------------------------------------------------*/
+.subcontent1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  margin-top: 36px;
+  margin-left: 30px;
+
+
+
+}
+
+.cricleOrange {
+  border-radius: 50%;
+  background-color: var(--lightCarrot);
+  border: 1px solid var(--lightCarrot);
+  width: 18.21px;
+  height: 18.28px;
+  margin-left: -8px;
+  margin-top: 10px;
+  color: var(--white);
+}
+
+.number {
+  margin-left: 5px;
+  margin-top: -5px;
+}
+
+.subscribe {
+  width: 29px;
+  height: 30px;
+  margin-top: -10px;
+  margin-bottom: 24px;
+
+}
+
+/*------------------------------------------------------------------*/
+.AvatarNameContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.Avatar {
+  width: 37px;
+  height: 37px;
+  background-color: var(--lightCarrot);
+  border: 1px solid var(--lightCarrot);
+  border-radius: 50%;
+  margin-top: 40px;
+
+}
+
+.avat {
+  color: var(--white);
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.AvatarName {
+  margin-top: 48px;
+  font-size: 14px;
+  color: var(--grey);
+}
+
+.Victor {
+  width: 10px;
+  height: 11px;
+  margin-top: 55px;
+
+}
+
+/*------------------------------------------------------------------*/
+
+.Languages {
+  display: flex;
+  gap: 5px;
+}
+
+.ru {
+  font-size: 14px;
+  margin-left: 5px;
+  width: 29px;
+  height: 29px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  align-content: center;
+  margin-left: 10px;
+}
+
+.en {
+  font-size: 14px;
+  width: 29px;
+  height: 29px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  align-content: center;
+}
+
+.activ {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+/*------------------------------------------------------------------*/
+
+@media screen and (max-width: 769px) {
+  .Header {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo {
+    width: 120px;
+    height: 35px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .navContent {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .nav-p {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .subcontent1 {
+    margin-left: 0;
+    margin-top: 20px;
+    gap: 5px;
+  }
+
+  .AvatarNameContent {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .Avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .Languages {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .ru,
+  .en {
+    width: 24px;
+    height: 24px;
+  }
+}

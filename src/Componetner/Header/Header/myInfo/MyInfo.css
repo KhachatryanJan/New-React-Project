@@ -1,0 +1,36 @@
+.Myinfo {
+    width: 219px;
+    height: 154px;
+    border: 1px solid var(--shadowWith);
+    box-shadow: 1px 1px 10px 1px var(--shadowWith);
+    margin-top: 30px;
+    display: none;
+  
+
+}
+
+.activ-info{
+    display: flex;
+}
+.info-p {
+    display: flex;
+    gap: 20px;
+    border: 1px solid var(--shadowWith);
+    box-shadow: 1px 1px 1px 1px var(--shadowWith);
+    
+}
+
+img {
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+p{
+    font-size: 14px;
+    color:var( --grey);
+    margin-top: 5px;
+    
+}
