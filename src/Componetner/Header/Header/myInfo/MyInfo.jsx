@@ -7,19 +7,19 @@ function MyInfo() {
     return (
         <div className="Myinfo">
             <div className="info-p">
-                <img src={user} alt="user" ></img>
+                <img src={user} alt="user"  className="img"></img>
                 <p>Мой профиль</p>
             </div>
             <div className="info-p">
-                <img src={card} alt="card" ></img>
+                <img src={card} alt="card"className="img" ></img>
                 <p>Пополнить баланс</p>
             </div>
             <div className="info-p">
-                <img src={help} alt="help" ></img>
+                <img src={help} alt="help" className="img"></img>
                 <p>FAQ</p>
             </div>
             <div className="info-p">
-                <img src={logut} alt="logout" ></img>
+                <img src={logut} alt="logout"className="img" ></img>
                 <p>Выйти</p>
             </div>
         </div>

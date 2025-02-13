@@ -1,0 +1,474 @@
+
+
+/*-------------------------------------------------------------*/
+.ConsultationsContent{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.consul-h1 {
+    font-size: 36px;
+    color:#4f4f4f;
+    margin-top: 220px;
+    margin-left: 380px;
+}
+.consul-p{
+    font-size: 18px;
+    margin-left: 380px;
+    margin-top: 70px;
+} 
+.Orange-squares{
+  width: 390px;
+  height: 20px;
+  background-color: #FF9F28;
+  margin-left:380px ;
+  margin-top: -90px;
+  position: absolute;
+  z-index: -1;
+}
+
+.Orange-squares1{
+    width: 55px;
+    height: 10px;
+    background-color: #FF9F28;
+    margin-left:190px ;
+    margin-top: -10px;
+    position: absolute;
+    z-index: -1;
+
+}
+.Orange-squares2{
+    width: 223px;
+    height: 10px;
+    background-color: #FF9F28;
+    margin-left:310px ;
+    margin-top: -10px;
+    position: absolute;
+    z-index: -1;
+
+}
+.b-col{
+   color:var(--lightBlack); 
+}
+
+.blue-sp{
+    color:var(--blue) ;
+}
+
+
+
+.butt{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top:70px ;
+    margin-left: 380px;
+}
+.butt-sig{
+    width: 275px;
+    height: 59px;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+    background-color: var( --white);
+    color:var(--blue) ;
+    font-size: 20px;
+    
+    
+}
+.butt-sig:hover{
+  background-color: var(--blue);
+  color:  var( --white);
+}
+
+.butt-sig1{
+    width: 275px;
+    height: 59px;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+    background-color:  var( --white);
+    color:var(--blue);
+    font-size: 20px;
+}
+.butt-sig1:hover{
+    background-color: var(--blue);
+    color:  var( --white);
+  }
+
+
+  .big-photos{
+    margin-left: 1080px;
+    position: relative;
+  }
+
+  .lightBlue{
+    margin-top: -250px;
+    z-index: -1px;
+  }
+
+  .lightBlue2{
+    margin-top: -370px;
+    margin-left: -20px;
+    z-index: 1px;
+    
+  }
+
+  .doctorsBody{
+    margin-top: -470px;
+    margin-left: -40px;
+  }
+  .doctorsPhot{
+    position:absolute;
+    margin-top: -465px;
+    margin-left: -740px;
+    z-index: -4px;
+  }
+
+
+  /*-------------------------------------------------------------*/
+
+  .MakeAnAppointmentWithADoctor{
+    width: 1158px;
+    height: 304px;
+    margin-left: 380px;
+    box-shadow: 1px 1px 10px 1px var(--shadowWith);
+    border: 0.5px;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+
+.doctor {
+    width: 185.12px;
+    height: 315.73px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.MakeAnAppointmentWithADoctor-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    margin-top: -370px;
+}
+
+.MakeAnAppointmentWithADoctor-info-h1 {
+    font-size: 24px;
+    color: var(--lightBlack);
+    margin-top: 30px;
+}
+
+.oranjLin3 {
+    position: absolute;
+    width: 210px;
+    border: 5px solid var(--lightCarrot);
+    margin-top: -10px;
+    z-index: -1;
+}
+
+.YellowCircle-inf {
+    display: flex;
+    flex-direction: row;
+}
+
+.YellowCircle {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.p-text3 {
+    font-size: 15px;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+.MakeAnAppointmentWithADoctor-info-p1 {
+    font-size: 15px;
+}
+
+.MakeAnAppointmentWithADoctor-info-p2 {
+    color: var(--blue);
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+/*--------------------------------------------------------------*/
+.my-notes {
+  width: 143px;
+  height: 30px;
+  border-radius: 5px;
+
+  margin-top: 100px;
+  margin-left: 920px;
+  background-color: #56CCF2;
+}
+.my-notes-p {
+  font-size: 18px;
+  margin-left: 25px;
+}
+
+.UpcomingPastCanceled {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  font-size: 15px;
+  color: #A0A0A0;
+  margin-top: 40px;
+  margin-left: 380px;
+}
+.hov-p:hover{
+  color: black;
+}
+
+/*--------------------------------------------------*/
+.DoctorInfromationContent{
+  width: 1160px;
+  height: 193px;
+  border: 0.5px solid var(--shadowWith);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 5px var(--shadowWith);
+  margin-left: 380px;
+  margin-top: 20px;
+
+}
+
+.video {
+  width: 27px;
+  height: 27px;
+  margin-left: 30px;
+  margin-top: 3px;
+}
+
+.video-p {
+  font-size: 15px;
+  color: #4f4f4f;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.p{
+  margin-left: 10px;
+}
+.calendar{
+  width: 16px;
+  height: 16px;
+  margin-left: 20px;
+  margin-top: 8px
+}
+.clock{
+  width: 16px;
+  height: 16px;
+  margin-left: 20px;
+  margin-top: 8px
+}
+
+.oliga {
+  width: 123px;
+  height: 123px;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.doc-name-experience {
+  margin-left:160px;
+  margin-top: -130px;
+ 
+}
+
+.name {
+  font-size: 18px;
+  color: #4f4f4f;
+}
+
+.Pediatrician {
+  font-size: 18px;
+  color: #AAAAAA;
+  margin-top: -10px;
+}
+
+.experience {
+  font-size: 18px;
+  color: #4F4F4F;
+  margin-top: -10px;
+}
+
+.Butt-Planned-ViewEntry-ViewTheResolution {
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: -2px;
+
+}
+
+.but3 {
+  width: 140px;
+  height: 27px;
+  background-color: var(--lightCarrot);
+  margin-left: 750px;
+  margin-top: -160px;
+  border-radius: 5px;
+  border: none;
+}
+
+.Planned {
+  font-size: 15px;
+  color: var(--grey1);
+  margin-top: 4px;
+}
+
+.Planned {
+  font-size: 15px;
+  color: var(--grey1);
+  margin-top: 4px;
+}
+
+.but4 {
+  width: 225px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: var(--blue);
+  border: none;
+  margin-left: 670px;
+  margin-top: 20px;
+}
+
+.but5 {
+  width: 225px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: var( --lightWhite);
+  border: none;
+  margin-left: 670px;
+}
+
+.ViewEntry {
+  color: var(--white);
+  font-size: 15px;
+  margin-top:10px;
+}
+
+.ViewTheResolution {
+  color: var(--white1);
+  font-size: 15px;
+}
+
+.cal-clock-vid{
+    display: flex;
+}
+
+.red-but{
+  background-color: var(--red);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .consul-h1, .consul-p, .Orange-squares, .butt {
+      margin-left: 20px;
+  }
+
+  .consul-h1 {
+      font-size: 28px;
+      margin-top: 100px;
+  }
+
+  .consul-p {
+      font-size: 16px;
+      margin-top: 30px;
+  }
+
+  .Orange-squares {
+      width: 200px;
+      margin-left: 20px;
+  }
+
+  .butt {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .big-photos {
+    margin-top: 250;
+    margin-left: 0;
+  }
+
+ 
+
+  .MakeAnAppointmentWithADoctor {
+      width: 90%;
+      margin-left: 5%;
+      height: auto;
+      padding: 20px;
+  }
+
+  .doctor {
+      margin-left: 0;
+  }
+
+  .MakeAnAppointmentWithADoctor-info {
+      margin-left: 0;
+      margin-top: 20px;
+  }
+
+  .DoctorInfromationContent {
+      width: 90%;
+      margin-left: 5%;
+      height: auto;
+      padding: 20px;
+  }
+
+  .doc-name-experience {
+      margin-left: 20px;
+      margin-top: 20px;
+  }
+
+  .Butt-Planned-ViewEntry-ViewTheResolution {
+      margin-left: 20px;
+      margin-top: 20px;
+  }
+
+  .but3, .but4, .but5 {
+      margin-left: 20px;
+      margin-top: 20px;
+  }
+  .UpcomingPastCanceled{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .consul-h1 {
+      font-size: 24px;
+  }
+
+  .consul-p {
+      font-size: 14px;
+  }
+
+  .butt-sig, .butt-sig1 {
+      width: 100%;
+      font-size: 16px;
+  }
+
+  .MakeAnAppointmentWithADoctor-info-h1 {
+      font-size: 20px;
+  }
+
+  .MakeAnAppointmentWithADoctor-info-p2 {
+      font-size: 20px;
+  }
+
+  .doc-name-experience {
+      margin-left: 10px;
+  }
+
+  .Butt-Planned-ViewEntry-ViewTheResolution {
+      margin-left: 10px;
+  }
+}
