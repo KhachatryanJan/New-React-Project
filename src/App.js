@@ -8,6 +8,8 @@ import Upcoming from './Componetner/Main/Upcoming';
 import Past from './Componetner/Main/Past';
 import Status from './Componetner/Main/Status';
 import Footer from './Componetner/Footer/Footer';
+
+
 function App() {
   return (
     <>
@@ -16,10 +18,11 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Main />}>
-              <Route path="/Upcoming" element={<Upcoming />} />
+              <Route path="Upcoming" element={<Upcoming />} />
               <Route path="Past" element={<Past />} />
               <Route path="Status" element={<Status />} />
             </Route>
+            
           </Routes>
           <Footer />
         </LanguageProvider>

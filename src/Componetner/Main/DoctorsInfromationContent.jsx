@@ -5,7 +5,7 @@ import oliga from "../../images/oliga.png"
 import { useContext, useState } from "react"
 import { LanguageContexte } from "../../Constext/LanguageConstext"
 import { translet } from "../../utils/translet"
-
+import { Link } from "react-router-dom"
 function DoctorInfromationContent(doc) {
     const { lang } = useContext(LanguageContexte)
 
@@ -35,7 +35,7 @@ function DoctorInfromationContent(doc) {
                 <button className={`but3 ${ status === "but3" ? "red-but" :"" }`}
                 onClick={() => setStatus((prev) => !prev)}>
                     <p className="Planned">{translet("Planned", lang)}</p></button>
-                <button className="but4"><p className="ViewEntry">{translet("ViewTheRecording", lang)}</p></button>
+               <Link to ="doctor-Page"><button className="but4"><p className="ViewEntry">{translet("ViewTheRecording", lang)}</p></button></Link> 
                 <button className="but5"><p className="ViewTheResolution">{translet("ViewTheDecree", lang)}</p></button>
             </div>
         </div>

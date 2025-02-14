@@ -88,8 +88,9 @@
 }
 
 .footer-icon2-p{
-    margin-left: 1120px;
+    margin-left: 50px;
     margin-top: -280px;
+ 
 }
 .footer-icon2-p-tex{
     color:var(--white)
@@ -114,9 +115,7 @@
         margin-top: -250px;
     }
 
-    .footer-icon2-p {
-        margin-left: 55%;
-    }
+    
 }
 
 @media (max-width: 480px) {
