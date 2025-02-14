@@ -1,92 +1,112 @@
 [
-    {
+    {    
+        "id":"1",
         "name": "Oliga",
         "lastName": "Никитина",
         "Experience": "Стаж 15 лет",
         "profession": "Педиатр",
         "date": "2023.01.22",
         "hour": "12:00",
-        "status": "false"
+        "status": "false",
+        "minute":"30 минут"
     },
     {
+        "id":"2",
         "name": "Андрей",
         "lastName": "Иванов",
         "Experience": "Стаж 10 лет",
         "profession": "Кардиолог",
         "date": "2025.03.15",
         "hour": "09:30",
-        "status": "true"
+        "status": "true",
+        "minute":"20 минут"
     },
     {
+        "id":"3",
         "name": "Мария",
         "lastName": "Смирнова",
         "Experience": "Стаж 8 лет",
         "profession": "Невролог",
         "date": "2025.05.10",
         "hour": "14:45",
-        "status": "true"
+        "status": "true",
+        "minute":"15 минут"
     },
     {
+        "id":"4",
         "name": "Давид",
         "lastName": "Петров",
         "Experience": "Стаж 20 лет",
         "profession": "Ортопед",
         "date": "2023.12.07",
         "hour": "11:15",
-        "status": "false"
+        "status": "false",
+        "minute":"20 минут"
     },
     {
+        "id":"5",
         "name": "София",
         "lastName": "Михайлова",
         "Experience": "Стаж 12 лет",
         "profession": "Офтальмолог",
         "date": "2024.06.20",
         "hour": "16:00",
-        "status": "false"
+        "status": "false",
+        "minute":"35 минут"
     },
     {
+        "id":"6",
         "name": "Григорий",
         "lastName": "Сергеев",
         "Experience": "Стаж 18 лет",
         "profession": "Стоматолог",
         "date": "2024.08.05",
         "hour": "10:30",
-        "status": "false"
+        "status": "false",
+        "minute":"10 минут"
     },
     {
+        "id":"7",
         "name": "Екатерина",
         "lastName": "Алексеева",
         "Experience": "Стаж 9 лет",
         "profession": "Терапевт",
         "date": "2025.02.10",
         "hour": "13:20",
-        "status": "false"
+        "status": "false",
+        "minute":"15 минут"
     },
     {
+        "id":"8",
         "name": "Сергей",
         "lastName": "Васильев",
         "Experience": "Стаж 14 лет",
         "profession": "Хирург",
         "date": "2025.04.25",
         "hour": "08:45",
-        "status": "false"
+        "status": "false",
+        "minute":"20 минут"
     },
     {
+        "id":"9",
         "name": "Ольга",
         "lastName": "Фёдорова",
         "Experience": "Стаж 7 лет",
         "profession": "Дерматолог",
         "date": "2024.07.18",
         "hour": "15:10",
-        "status": "false"
+        "status": "false",
+        "minute":"25 минут"
     },
     {
+        "id":"10",
         "name": "Владимир",
         "lastName": "Николаев",
         "Experience": "Стаж 16 лет",
         "profession": "Психиатр",
         "date": "2025.09.30",
         "hour": "17:50",
-        "status": "false"
+        "status": "false",
+        "minute":"10 минут"
     }
 ]

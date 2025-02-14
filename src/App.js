@@ -8,6 +8,7 @@ import Upcoming from './Componetner/Main/Upcoming';
 import Past from './Componetner/Main/Past';
 import Status from './Componetner/Main/Status';
 import Footer from './Componetner/Footer/Footer';
+import DoctorInfoPage from './Pages/DoctorInfoPage';
 
 
 function App() {
@@ -22,8 +23,9 @@ function App() {
               <Route path="Past" element={<Past />} />
               <Route path="Status" element={<Status />} />
             </Route>
-            
+            <Route path="/Doctor/:id" element={<DoctorInfoPage />} />
           </Routes>
+        
           <Footer />
         </LanguageProvider>
       </BrowserRouter>
