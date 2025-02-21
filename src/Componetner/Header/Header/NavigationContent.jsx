@@ -1,15 +1,14 @@
-import { useContext } from "react"
-import { LanguageContexte } from "../../../Constext/LanguageConstext"
-import { translet } from "../../../utils/translet"
 
+import { useTranslation } from "react-i18next";
 
 function NavContent(){
-   const {lang}=useContext(LanguageContexte)
+  
+   const {t}=useTranslation();
    return(
     <div className="navContent">
-     <p className="nav-p">{translet("HowToUse",lang)}</p>
-     <p className="nav-p">{translet("MyEntries", lang)}</p>
-     <p className="nav-p">{translet("MakeAnAppointmentWithADoctor", lang) }</p>
+     <p className="nav-p">{t("HowToUse")}</p>
+     <p className="nav-p">{t("MyEntries")}</p>
+     <p className="nav-p">{t("MakeAnAppointmentWithADoctor") }</p>
     </div>
    )
 }

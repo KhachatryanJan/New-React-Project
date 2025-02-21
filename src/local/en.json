@@ -1,4 +1,5 @@
 {
+    "translation":{
     "HowToUse" :"How to use?",
     "MyEntries":"My entries",
     "MakeAnAppointmentWithADoctor":"Make an appointment with a doctor",
@@ -30,14 +31,20 @@
    "AboutTheService":"About the service",
    "Contacts":"Contacts",
    "UserAgreement":"User Agreement",
- 
- 
    "Consult":"Consult",
    "Now":"now",
    "orBy":"or by",
    "pre-registration":"pre-registration",
    "fromYourComputerOrUsingOurApplication":"from your computer or using our application",
-   "availableIn":"available in"
- 
-    
+   "availableIn":"available in",
+   "MyProfile":"My profile",
+   "TopUpBalance":"Top up balance",
+   "LogOut":"Log out",
+
+   "NearestEntry":"Nearest entry",
+   "Education":"Education",
+   "SpecializesInTreatment":"Specializes in treatment",
+   "RussianStateUniversity":"Russian State University",
+   "ResidencyinPediatrics":"Residency in Pediatrics"
+    }
  }

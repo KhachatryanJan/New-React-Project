@@ -22,6 +22,7 @@ function DoctorInfoPage() {
     if (doc === undefined) {
         return <h1>Doctor not Found</h1>
     }
+
     return (
          <>
         <div className="DoctorProfil">
@@ -42,7 +43,7 @@ function DoctorInfoPage() {
             </div>
 
             <div className="time">
-                <p className="money">900 / консультация</p>
+                <p className="money">{doc.consultation}</p>
                 <p className="minute">{doc.minute}</p>
             </div>
 
@@ -50,7 +51,7 @@ function DoctorInfoPage() {
         
                 
                 
-                <NearestEntery/>
+        <NearestEntery  id={doc.id} {...doc}/>
                 
         </>
     )

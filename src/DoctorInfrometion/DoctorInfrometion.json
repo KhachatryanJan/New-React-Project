@@ -7,8 +7,11 @@
         "profession": "Педиатр",
         "date": "2023.01.22",
         "hour": "12:00",
-        "status": "false",
-        "minute":"30 минут"
+        "status": false,
+        "minute":"30 минут",
+        "consultation":"900 / консультация",
+        "StartOfStudiens":"1991",
+        "graduation":"1992"
     },
     {
         "id":"2",
@@ -17,9 +20,12 @@
         "Experience": "Стаж 10 лет",
         "profession": "Кардиолог",
         "date": "2025.03.15",
-        "hour": "09:30",
-        "status": "true",
-        "minute":"20 минут"
+        "hour": "14:45",
+        "status": true,
+        "minute":"20 минут",
+        "consultation":"300 / консультация",
+        "StartOfStudiens":"1993",
+        "graduation":"1996"
     },
     {
         "id":"3",
@@ -29,8 +35,12 @@
         "profession": "Невролог",
         "date": "2025.05.10",
         "hour": "14:45",
-        "status": "true",
-        "minute":"15 минут"
+        "status": true,
+        "minute":"15 минут",
+        "consultation":"200 / консультация",
+        "StartOfStudiens":"1991",
+        "graduation":"1997"
+        
     },
     {
         "id":"4",
@@ -40,8 +50,11 @@
         "profession": "Ортопед",
         "date": "2023.12.07",
         "hour": "11:15",
-        "status": "false",
-        "minute":"20 минут"
+        "status": false,
+        "minute":"20 минут",
+        "consultation":"300 / консультация",
+        "StartOfStudiens":"1991",
+        "graduation":"1995"
     },
     {
         "id":"5",
@@ -51,8 +64,11 @@
         "profession": "Офтальмолог",
         "date": "2024.06.20",
         "hour": "16:00",
-        "status": "false",
-        "minute":"35 минут"
+        "status": false,
+        "minute":"35 минут",
+        "consultation":"500 / консультация",
+        "StartOfStudiens":"1991",
+        "graduation":"1992"
     },
     {
         "id":"6",
@@ -62,8 +78,11 @@
         "profession": "Стоматолог",
         "date": "2024.08.05",
         "hour": "10:30",
-        "status": "false",
-        "minute":"10 минут"
+        "status": false,
+        "minute":"10 минут",
+        "consultation":"100 / консультация",
+        "StartOfStudiens":"1993",
+        "graduation":"1994"
     },
     {
         "id":"7",
@@ -73,8 +92,11 @@
         "profession": "Терапевт",
         "date": "2025.02.10",
         "hour": "13:20",
-        "status": "false",
-        "minute":"15 минут"
+        "status": false,
+        "minute":"15 минут",
+        "consultation":"300 / консультация",
+        "StartOfStudiens":"1990",
+        "graduation":"1993"
     },
     {
         "id":"8",
@@ -84,8 +106,11 @@
         "profession": "Хирург",
         "date": "2025.04.25",
         "hour": "08:45",
-        "status": "false",
-        "minute":"20 минут"
+        "status": false,
+        "minute":"20 минут",
+        "consultation":"200 / консультация",
+        "StartOfStudiens":"1992",
+        "graduation":"1995"
     },
     {
         "id":"9",
@@ -95,8 +120,11 @@
         "profession": "Дерматолог",
         "date": "2024.07.18",
         "hour": "15:10",
-        "status": "false",
-        "minute":"25 минут"
+        "status": false,
+        "minute":"25 минут",
+        "consultation":"300 / консультация",
+        "StartOfStudiens":"1991",
+        "graduation":"1995"
     },
     {
         "id":"10",
@@ -106,7 +134,10 @@
         "profession": "Психиатр",
         "date": "2025.09.30",
         "hour": "17:50",
-        "status": "false",
-        "minute":"10 минут"
+        "status": false,
+        "minute":"10 минут",
+        "consultation":"100 / консультация",
+        "StartOfStudiens":"1991",
+        "graduation":"1996"
     }
 ]

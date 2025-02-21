@@ -2,26 +2,26 @@ import calendar from "../../images/calendar.png"
 import clock from "../../images/clock .png"
 import video from "../../images/video-camera .png"
 import oliga from "../../images/oliga.png"
-import { useContext, useState } from "react"
-import { LanguageContexte } from "../../Constext/LanguageConstext"
-import { translet } from "../../utils/translet"
+import { useState } from "react"
+
 import { Link } from "react-router-dom"
-
+import { useTranslation } from "react-i18next"
 function DoctorInfromationContent(doc) {
-    const { lang } = useContext(LanguageContexte)
-console.log(doc.id);
-
-   const [status,setStatus]=useState(doc.status)
  
+    const {t}=useTranslation();
+
+    const [status, setStatus] = useState(true)
+
+
     return (
         <div className="DoctorInfromationContent">
             <div className="cal-clock-vid">
                 <img src={calendar} alt="calendar" className="calendar"></img>
                 <p className="p">{doc.date}</p>
                 <img src={clock} alt="clock" className="clock"></img>
-                <p  className="p">{doc.hour}</p>
+                <p className="p">{doc.hour}</p>
                 <img src={video} className="video" alt="video"></img>
-                <p className="video-p">{translet("VideoCommunication", lang)}</p>
+                <p className="video-p">{t("VideoCommunication")}</p>
             </div>
 
             <div>
@@ -34,11 +34,9 @@ console.log(doc.id);
             </div>
 
             <div className="Butt-Planned-ViewEntry-ViewTheResolution">
-                <button className={`but3 ${ status === "but3" ? "red-but" :"" }`}
-                onClick={() => setStatus((prev) => !prev)}>
-                    <p className="Planned">{translet("Planned", lang)}</p></button>
-               <Link to ={`/Doctor/${doc.id}`}><button className="but4"><p className="ViewEntry">{translet("ViewTheRecording", lang)}</p></button></Link> 
-                <button className="but5"><p className="ViewTheResolution">{translet("ViewTheDecree", lang)}</p></button>
+                <button className={`but3 ${doc.status === status ? "but-3" : ""}`}><p className="Planned">{t("Planned")}</p></button>
+                <Link to={`/Doctor/${doc.id}`}><button className="but4"><p className="ViewEntry">{t("ViewTheRecording")}</p></button></Link>
+                <button className="but5"><p className="ViewTheResolution">{t("ViewTheDecree")}</p></button>
             </div>
         </div>
 

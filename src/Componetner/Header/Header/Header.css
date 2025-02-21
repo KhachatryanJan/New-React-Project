@@ -46,10 +46,8 @@
   flex-direction: column;
   position: relative;
   z-index: 1;
-  margin-top: 36px;
+  margin-top: 24px;
   margin-left: 30px;
-
-
 
 }
 
@@ -85,7 +83,9 @@
   gap: 10px;
   margin-left: 30px;
 }
-
+.activ-info{
+  display: flex;
+}
 .Avatar {
   width: 37px;
   height: 37px;
@@ -112,6 +112,7 @@
   width: 10px;
   height: 11px;
   margin-top: 55px;
+  cursor: pointer;
 
 }
 
@@ -119,7 +120,10 @@
 
 .Languages {
   display: flex;
-  gap: 5px;
+  gap:5px;
+  position: absolute;
+  margin-left: 1350px;
+  cursor: pointer;
 }
 
 .ru {
@@ -129,8 +133,12 @@
   height: 29px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  display: flex;
   align-content: center;
+  justify-content: center;
   margin-left: 10px;
+  margin-top: 5px;
+  
 }
 
 .en {
@@ -139,7 +147,11 @@
   height: 29px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  display: flex;
   align-content: center;
+  justify-content: center;
+ margin-top: 5px;
+  
 }
 
 .activ {

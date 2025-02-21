@@ -10,9 +10,7 @@ function AvatarNameContent() {
             <div className="AvatarNameContent">
                 <div className="Avatar"><span className="avat">{avatar}</span></div>
                 <p className="AvatarName">Артем Свиридов</p>
-                <img src={victorImg} alt="victor" className="Victor" onClick={() => {
-                    console.log(userInfo);
-                    
+                <img src={victorImg} alt="victor" className="Victor" onClick={() => {  
                     setUserinfo(!userInfo)
                 }}></img>
             </div>

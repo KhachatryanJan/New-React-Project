@@ -1,17 +1,19 @@
-import { useContext } from "react"
-import { translet } from "../../utils/translet"
+
 import { LanguageContexte } from "../../Constext/LanguageConstext"
 import { Link } from "react-router-dom" 
+import { useTranslation} from "react-i18next"
 function MyNotesContent() {
-    const {lang}=useContext(LanguageContexte)
+    
+    const {t}=useTranslation()
+    
     return (
         <div>
-            <div className="my-notes"><p className="my-notes-p">{translet("MyEntries", lang)}</p></div>
+            <div className="my-notes"><p className="my-notes-p">{t("MyEntries")}</p></div>
 
             <div className="UpcomingPastCanceled">
-          <Link to ="Upcoming" ><p className="hov-p">{translet("Upcoming", lang)}</p></Link>
-          <Link to ="Past"><p className="hov-p">{translet("Past", lang)}</p></Link>  
-           <Link to="Status"> <p className="hov-p">{translet("Canceled", lang)}</p></Link>   
+          <Link to ="Upcoming" ><p className="hov-p">{t("Upcoming")}</p></Link>
+          <Link to ="Past"><p className="hov-p">{t("Past")}</p></Link>  
+           <Link to="Status"> <p className="hov-p">{t("Canceled")}</p> </Link>   
             </div>
         </div>
     )

@@ -4,14 +4,10 @@
     border: 1px solid var(--shadowWith);
     box-shadow: 1px 1px 10px 1px var(--shadowWith);
     margin-top: 30px;
-    display: none;
-  
+    
 
 }
 
-.activ-info{
-    display: flex;
-}
 .info-p {
     display: flex;
     gap: 20px;
