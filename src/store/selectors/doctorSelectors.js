@@ -1,2 +1,2 @@
-const getDoctor=state => state
+const getDoctor=state => state.doctors
 export {getDoctor}
