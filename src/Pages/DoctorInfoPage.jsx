@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import date from "../DoctorInfrometion/DoctorInfrometion.json"
 import NearestEntery from "./NearestEntry"
+import Header from "../Componetner/Header/Header/Header"
+import Footer from "../Componetner/Footer/Footer"
 
 
 function DoctorInfoPage() {
@@ -25,6 +27,7 @@ function DoctorInfoPage() {
 
     return (
          <>
+         <Header/>
         <div className="DoctorProfil">
             <div className="p-icon">
                 <p className="p-text">Врачи</p>
@@ -52,6 +55,7 @@ function DoctorInfoPage() {
                 
                 
         <NearestEntery  id={doc.id} {...doc}/>
+        <Footer/>
                 
         </>
     )
