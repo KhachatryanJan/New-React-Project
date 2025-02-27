@@ -24,30 +24,28 @@ import store from './store';
 
 function App() {
   return (
-    <Provider  store={store}>
-    <BrowserRouter>
-      <LanguageProvider>
-        <AuthProvider>
-          <Routes>
-            <Route path="/Login" element={ <LoginForm /> } >
-             {/* <Route path="UserName" element={<LoginUserName />} />*/}
-            </Route>
+    <Provider store={store}>
+      <BrowserRouter>
+        <LanguageProvider>
+          <AuthProvider>
+            <Routes>
+              <Route path="/" element={<LoginForm />} />
+              <Route path="/UserName" element={<LoginUserName />} />
 
 
+              <Route path="/Home" element={<Main />}>
+                <Route path="Upcoming" element={<Upcoming />} />
+                <Route path="Past" element={<Past />} />
+                <Route path="Status" element={<Status />} />
 
-            <Route path="/Home" element={<Main />}>
-              <Route path="Upcoming" element={<Upcoming />} />
-              <Route path="Past" element={<Past />} />
-              <Route path="Status" element={<Status />} />
+              </Route>
 
-            </Route>
+              <Route path="/Doctor/:id" element={<DoctorInfoPage />} />
 
-            <Route path="/Doctor/:id" element={<DoctorInfoPage />} />
-
-          </Routes>
-        </AuthProvider>
-      </LanguageProvider>
-    </BrowserRouter>
+            </Routes>
+          </AuthProvider>
+        </LanguageProvider>
+      </BrowserRouter>
     </Provider>
   );
 }

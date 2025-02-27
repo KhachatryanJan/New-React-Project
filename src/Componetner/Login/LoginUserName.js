@@ -1,9 +1,13 @@
 import AuthContext from "../../Constext/authConstext";
-import { update_me } from "../../services/api/auth";
+import { getMe, login, update_me } from "../../services/api/auth";
 import { useActionState, useContext} from "react"
 import "./LoginUserName.css"
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+
 function LoginUserName() {
-    const { login: constextLogin } = useContext(AuthContext)
+    const dispatch=useDispatch()
+    const navigator=useNavigate()
     const [data, action, isPromiss] = useActionState(async (data, state) => {
         const first_name = state.get("first_name")
         const last_name = state.get("last_name")
@@ -11,11 +15,13 @@ function LoginUserName() {
             return { data: {}, error: "First_name and last_name are required" }
         } else {
             try {
-                const data = await update_me(first_name, last_name);
-                if (data.status === 200) {
-                    constextLogin(data.result)
-                    console.log(data);
-
+                const res = await update_me(first_name, last_name);
+                if (res.status === 200) {
+                    //constextLogin(data.result)
+                    const userData=await getMe()
+                    console.log(res);
+                    dispatch(userData.result)
+                    navigator("/Home")
                 }
                 return { data, error: null }
             } catch (error) {

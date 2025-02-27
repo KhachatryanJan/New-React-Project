@@ -4,32 +4,33 @@ import "./LoginForm.css"
 import AuthContext from "../../Constext/authConstext";
 
 import { useNavigate } from "react-router-dom";
-
+import api from "../../services/api/api"
 
 
 
 function LoginForm() {
     const { login: constextLogin } = useContext(AuthContext)
     const [isShow, setShow] = useState(false)
-    const navigate=useNavigate()
+    const navigate = useNavigate()
     const [data, action, isPromiss] = useActionState(async (data, state) => {
         const email = state.get("email")
         const otp = state.get("otp")
-     
+
         if (otp) {
-            
-       
+
             if (!otp || !email) {
                 return { data: {}, error: "Email and OPT are required" }
             } else {
                 try {
                     const data = await verify(email, otp);
                     if (data.status === 200) {
-                        constextLogin(data.result)
+                        //constextLogin(data.result)
+                        const accessToken = data.result.accessToken
+                        localStorage.setItem("accesseToken", accessToken)
                         console.log(data);
-                      
-                        navigate("/Login/UserName")
-                      
+                        api.defaults.headers.common["Authorization"] = `Bearer ${accessToken}`
+                        navigate("/UserName")
+
                     }
                     return { data, error: null }
                 } catch (error) {
@@ -44,7 +45,7 @@ function LoginForm() {
                     const data = await login(email);
                     console.log(data);
                     if (data.status === 200) {
-                        setShow(data)
+                        setShow(true)
                     }
                 } catch (error) {
                     return { data: {}, error: "Somthing went wrong" }
@@ -61,7 +62,7 @@ function LoginForm() {
             <form action={action}>
                 <input type="email" placeholder="email" name="email" className="email" />
                 {isShow && <input type="text" placeholder="OTP" name="otp" className="otp"></input>}
-             
+
                 <button type="submit" className="submit">Login</button>
             </form>
         </div>

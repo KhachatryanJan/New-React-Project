@@ -3,12 +3,13 @@ import clock from "../../images/clock .png"
 import video from "../../images/video-camera .png"
 import oliga from "../../images/oliga.png"
 import { useState } from "react"
+import { doctorAcction}  from '../../store/acctions';
 
-import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
+import { useDispatch } from "react-redux"
 function DoctorInfromationContent(doc) {
- 
-    const {t}=useTranslation();
+    const dispatch = useDispatch()
+    const { t } = useTranslation();
 
     const [status, setStatus] = useState(true)
 
@@ -35,7 +36,10 @@ function DoctorInfromationContent(doc) {
 
             <div className="Butt-Planned-ViewEntry-ViewTheResolution">
                 <button className={`but3 ${doc.status === status ? "but-3" : ""}`}><p className="Planned">{t("Planned")}</p></button>
-                <Link to={`/Doctor/${doc.id}`}><button className="but4"><p className="ViewEntry">{t("ViewTheRecording")}</p></button></Link>
+                <button className="but4"
+                 onClick={() => {
+                        dispatch(doctorAcction.drawdoctor(doc.id))
+                }}><p className="ViewEntry">{t("ViewTheRecording")}</p></button>
                 <button className="but5"><p className="ViewTheResolution">{t("ViewTheDecree")}</p></button>
             </div>
         </div>

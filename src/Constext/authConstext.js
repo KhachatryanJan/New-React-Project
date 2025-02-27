@@ -1,37 +1,44 @@
 import { createContext, useCallback, useEffect, useState } from "react";
 import { getMe } from "../services/api/auth";
 import api from "../services/api/api";
-  const AuthContext = createContext();
+
+const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [isAuthenticated, setIsAuthenticated] = useState(false)
-    const login =useCallback( ({user,accessToken}) => {
-        localStorage.setItem("accessToken", accessToken)
+    const login = useCallback(({ user, accessToken }) => {
+        console.log("Logging in with accessToken:", accessToken);
+        // localStorage.getItem("accessToken", accessToken)
         setUser(user);
         setIsAuthenticated(true);
-        api.defaults.headers.common["Authorization"]=`Bearer ${accessToken}`
-    },[])
-    
-    useEffect(()=>{
-        const accessToken=localStorage.getItem("accessToken")
-        if(accessToken){
-             api.defaults.headers.common["Authorization"]=`Bearer ${accessToken}`
-            getMe().then(data=>{
-                setUser(data.result)
-                console.log(data.result);  
-                setIsAuthenticated(true)
-            }).catch(error =>{
-                console.log(error);  
-            })
-            
-        }
-    },[isAuthenticated])
+        // api.defaults.headers.common["Authorization"]=`Bearer ${accessToken}`
+    }, [])
 
-    const logout= useCallback(()=>{
+    useEffect(() => {
+        const accessToken = localStorage.getItem("accessToken")
+        console.log(accessToken);
+       
+        if (accessToken) {
+            //api.defaults.headers.common["Authorization"] = `Bearer ${accessToken}`;
+            api.defaults.headers.common["Authorization"] = `Token ${accessToken}`;
+            console.log("Token սահմանված է:", api.defaults.headers.common["Authorization"]);
+            getMe().then(data => {
+                setUser(data.result)
+                console.log(data.result);
+                setIsAuthenticated(true)
+            }).catch(error => {
+                console.log(error);
+            })
+
+        }
+    }, [isAuthenticated])
+  
+
+    const logout = useCallback(() => {
         setUser(null);
         setIsAuthenticated(false)
-    },[])
+    }, [])
     return <AuthContext.Provider value={{
         user,
         login,

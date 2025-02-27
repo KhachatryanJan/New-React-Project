@@ -1,6 +1,6 @@
 import { doctorTypes } from "../types"
 
-function drawdoctor(id){
+function  drawdoctor(id){
     return{
        type: doctorTypes.DRAW_DOCTOR,
        doctor:{
@@ -10,4 +10,4 @@ function drawdoctor(id){
 }
 }
 
-export default drawdoctor
+export {drawdoctor}

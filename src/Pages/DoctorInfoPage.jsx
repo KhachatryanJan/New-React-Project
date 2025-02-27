@@ -7,18 +7,21 @@ import date from "../DoctorInfrometion/DoctorInfrometion.json"
 import NearestEntery from "./NearestEntry"
 import Header from "../Componetner/Header/Header/Header"
 import Footer from "../Componetner/Footer/Footer"
+import { useDispatch } from "react-redux"
+import { doctorAcction } from "../store/acctions"
 
 
 function DoctorInfoPage() {
 
     const { id } = useParams();
     const [doc, setDoc] = useState({})
-
+    const dispatch=useDispatch()
 
     useEffect(() => {
         const foundDoctor = date.find((doctor) => doctor.id === id)
         if (foundDoctor)
             setDoc(foundDoctor)
+        dispatch(doctorAcction.drawdoctor(undefined))
     }, [id])
 
     if (doc === undefined) {

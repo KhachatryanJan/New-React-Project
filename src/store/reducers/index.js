@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
 import doctorReducer from "./doctorInfo";
+import  userNameReducers  from "./usreNameReducers";
 const reducers=combineReducers(
     {
-        doctors: doctorReducer
+        doctors: doctorReducer,
+        user:userNameReducers 
     }
 )
 
