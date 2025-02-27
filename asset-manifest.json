@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.926a1308.css",
-    "main.js": "/static/js/main.4d90b33b.js",
-    "static/js/488.861b3857.chunk.js": "/static/js/488.861b3857.chunk.js",
-    "static/media/DoctorsBody.png": "/static/media/DoctorsBody.90f08dac9b40202c918f.png",
-    "static/media/depositphotos.png": "/static/media/depositphotos.8d91bdee135ee09f9158.png",
-    "static/media/lightBlue2.png": "/static/media/lightBlue2.a6b3d6bee103ec2fdc61.png",
-    "static/media/lightBlue.png": "/static/media/lightBlue.f5f3e81b81e863949a69.png",
-    "static/media/AppDow.jpg": "/static/media/AppDow.a6b4e9affd76c27dfb0b.jpg",
-    "static/media/oliga.png": "/static/media/oliga.ce0d4d71ce59c692f1e3.png",
-    "static/media/docimg.png": "/static/media/docimg.f171dc0b70331ee51d37.png",
-    "index.html": "/index.html",
-    "main.926a1308.css.map": "/static/css/main.926a1308.css.map",
-    "main.4d90b33b.js.map": "/static/js/main.4d90b33b.js.map",
-    "488.861b3857.chunk.js.map": "/static/js/488.861b3857.chunk.js.map"
+    "main.css": "/New-React-Project/static/css/main.926a1308.css",
+    "main.js": "/New-React-Project/static/js/main.6effe87f.js",
+    "static/js/488.861b3857.chunk.js": "/New-React-Project/static/js/488.861b3857.chunk.js",
+    "static/media/DoctorsBody.png": "/New-React-Project/static/media/DoctorsBody.90f08dac9b40202c918f.png",
+    "static/media/depositphotos.png": "/New-React-Project/static/media/depositphotos.8d91bdee135ee09f9158.png",
+    "static/media/lightBlue2.png": "/New-React-Project/static/media/lightBlue2.a6b3d6bee103ec2fdc61.png",
+    "static/media/lightBlue.png": "/New-React-Project/static/media/lightBlue.f5f3e81b81e863949a69.png",
+    "static/media/AppDow.jpg": "/New-React-Project/static/media/AppDow.a6b4e9affd76c27dfb0b.jpg",
+    "static/media/oliga.png": "/New-React-Project/static/media/oliga.ce0d4d71ce59c692f1e3.png",
+    "static/media/docimg.png": "/New-React-Project/static/media/docimg.f171dc0b70331ee51d37.png",
+    "index.html": "/New-React-Project/index.html",
+    "main.926a1308.css.map": "/New-React-Project/static/css/main.926a1308.css.map",
+    "main.6effe87f.js.map": "/New-React-Project/static/js/main.6effe87f.js.map",
+    "488.861b3857.chunk.js.map": "/New-React-Project/static/js/488.861b3857.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.926a1308.css",
-    "static/js/main.4d90b33b.js"
+    "static/js/main.6effe87f.js"
   ]
 }
